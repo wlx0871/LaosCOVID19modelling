@@ -15,7 +15,7 @@ EndDate="12/05/2022"				#date up to which the data will be used for model calibr
 ################################ 
 ## Read the whole nation data of COVID-19 outbreaks in Laos
 Read_in_DATA<-function(Policy) {
- Data_20Jan2021_15Octl2022 <- read.csv(file = "Laos2020-01-22to2022-10-15.csv", head = TRUE)  
+ Data_20Jan2021_15Octl2022 <- read.csv(file = "LaosData.csv", head = TRUE)  
 
  WorkPeriod = which(Data_20Jan2021_15Octl2022$Date_reported=="04/04/2021"):which(Data_20Jan2021_15Octl2022$Date_reported==EndDate);  
 ###################  =========== Oxford Government pCOVID-19 policy data ============= ############################
